@@ -5,218 +5,252 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Esteban Gardiner</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <span class="nav-logo">EG</span>
+      <a href="#top" class="nav-logo">Esteban Gardiner</a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#leadership">Leadership</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <a href="mailto:estebangardiner@gmail.com" class="nav-cta">Get in touch &rarr;</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-inner">
-      <div class="hero-photo-wrap">
-        <img src="Esteban2025foto.jpg" alt="Esteban Gardiner" class="hero-photo"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-        <div class="hero-photo hero-monogram" style="display:none">EG</div>
-      </div>
-      <div class="hero-text">
-        <p class="hero-eyebrow">Hi, I'm</p>
-        <h1>Esteban Gardiner</h1>
-        <p class="hero-tagline">Business &amp; Finance · Computer Science · Calgary, AB</p>
-        <p class="hero-bio">
-          Third-year Business Management student at UBC with a minor in Computer Science and a 4.33 GPA.
-          Experienced in financial analysis, investment research, and strategic problem-solving through
-          national case competitions and independent business operations. Bloomberg Market Concepts and
-          FMI Foundations certified. Bilingual in English and Spanish.
-        </p>
-        <div class="hero-links">
-          <a href="mailto:estebangardiner@gmail.com" class="btn">Email Me</a>
-          <a href="https://linkedin.com/in/estebangardiner" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+  <section class="hero" id="top">
+    <div class="hero-left">
+      <p class="hero-label">Business &amp; Finance &nbsp;/&nbsp; Computer Science</p>
+      <h1 class="hero-name">Esteban<br><em>Gardiner</em></h1>
+      <p class="hero-desc">
+        Third-year BBA student at UBC, 4.33 GPA. Building at the intersection of finance and technology — from founding an e-commerce brand to placing top at national case competitions.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4.33</span>
+          <span class="stat-label">GPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2×</span>
+          <span class="stat-label">Case comp winner</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Languages</span>
         </div>
       </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="Esteban2025foto.jpg" alt="Esteban Gardiner"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="img-fallback">EG</div>
+      </div>
+      <div class="hero-links">
+        <a href="https://linkedin.com/in/estebangardiner" target="_blank" rel="noopener">LinkedIn &nearr;</a>
+        <a href="mailto:estebangardiner@gmail.com">Email &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Excel &amp; Financial Modelling</span><span class="dot">&bull;</span>
+      <span>DCF &amp; Comparable Company Analysis</span><span class="dot">&bull;</span>
+      <span>Python</span><span class="dot">&bull;</span>
+      <span>Bloomberg Market Concepts</span><span class="dot">&bull;</span>
+      <span>Investment Research</span><span class="dot">&bull;</span>
+      <span>Capital Allocation</span><span class="dot">&bull;</span>
+      <span>FMI Foundations</span><span class="dot">&bull;</span>
+      <span>Strategic Frameworks</span><span class="dot">&bull;</span>
+      <span>English &amp; Spanish</span><span class="dot">&bull;</span>
+      <span>Excel &amp; Financial Modelling</span><span class="dot">&bull;</span>
+      <span>DCF &amp; Comparable Company Analysis</span><span class="dot">&bull;</span>
+      <span>Python</span><span class="dot">&bull;</span>
+      <span>Bloomberg Market Concepts</span><span class="dot">&bull;</span>
+      <span>Investment Research</span><span class="dot">&bull;</span>
+      <span>Capital Allocation</span><span class="dot">&bull;</span>
+      <span>FMI Foundations</span><span class="dot">&bull;</span>
+      <span>Strategic Frameworks</span><span class="dot">&bull;</span>
+      <span>English &amp; Spanish</span><span class="dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="reveal">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-meta">
+          <span class="tl-date">Aug 2025 &ndash; Jan 2026</span>
+          <span class="tl-loc">Calgary, AB</span>
+        </div>
+        <div class="tl-body">
+          <h3>Owner &amp; Founder <span class="tl-company">LIVITED</span></h3>
+          <ul>
+            <li>Founded and operated an independent e-commerce consumer brand, managing all strategic, operational, and financial decisions from launch through revenue generation</li>
+            <li>Built financial models in Excel tracking revenue, margins, and ROI; analyzed unit economics and competitive positioning to make capital allocation decisions</li>
+            <li>Managed accounts payable and receivable, inventory, vendor negotiations, and financial recordkeeping</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-meta">
+          <span class="tl-date">Jun 2024 &ndash; Aug 2025</span>
+          <span class="tl-loc">Calgary, AB</span>
+        </div>
+        <div class="tl-body">
+          <h3>Sales Associate <span class="tl-company">Canadian Tire</span></h3>
+          <ul>
+            <li>Analyzed sales data and purchasing trends to identify performance gaps, delivering data-driven recommendations that improved product placement and inventory turnover</li>
+            <li>Processed high volumes of transactions accurately in a fast-paced environment, consistently meeting daily targets</li>
+            <li>Trained 3 new team members on procedures and compliance protocols</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section id="education">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
+  <section id="education" class="alt-bg reveal">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Education</h2>
+    </div>
 
-      <div class="card">
-        <div class="card-header">
+    <div class="edu-grid">
+      <div class="edu-main reveal">
+        <div class="edu-top">
           <div>
             <h3>Bachelor of Business Management</h3>
-            <p class="sub">University of British Columbia &mdash; Minor in Computer Science &nbsp;|&nbsp; Kelowna, BC</p>
+            <p class="edu-school">University of British Columbia &mdash; Kelowna, BC</p>
+            <p class="edu-sub">Minor in Computer Science &nbsp;&middot;&nbsp; Expected May 2028</p>
           </div>
-          <span class="badge">Expected May 2028</span>
+          <div class="gpa-badge">4.33<span>GPA</span></div>
         </div>
-        <ul>
-          <li><strong>GPA:</strong> 4.33 &nbsp;|&nbsp; Dean's List</li>
-          <li>Deputy Vice-Chancellor Scholarship for Continuing Students; Walter H Gage and Elsie M Harvey Education Abroad Scholarship</li>
-          <li><strong>Relevant courses:</strong> Investments (97%, A+), Financial Accounting (87%, A), Managerial Accounting (92%, A+), Business Statistics (95%, A+), Data Structures (100%, A+), Operations Management (93%, A+)</li>
-          <li>Proficient in Excel, Python, and Microsoft Office Suite; experienced with financial modelling, data analysis, and building structured analytical deliverables</li>
-        </ul>
+        <p class="edu-awards">Dean's List &nbsp;&middot;&nbsp; Deputy Vice-Chancellor Scholarship &nbsp;&middot;&nbsp; Walter H Gage &amp; Elsie M Harvey Education Abroad Scholarship</p>
+        <div class="courses">
+          <div class="course reveal">
+            <span class="course-grade">A+</span>
+            <span>Investments</span>
+            <span class="course-pct">97%</span>
+          </div>
+          <div class="course reveal">
+            <span class="course-grade">A+</span>
+            <span>Managerial Accounting</span>
+            <span class="course-pct">92%</span>
+          </div>
+          <div class="course reveal">
+            <span class="course-grade">A+</span>
+            <span>Business Statistics</span>
+            <span class="course-pct">95%</span>
+          </div>
+          <div class="course reveal">
+            <span class="course-grade">A+</span>
+            <span>Data Structures</span>
+            <span class="course-pct">100%</span>
+          </div>
+          <div class="course reveal">
+            <span class="course-grade">A+</span>
+            <span>Operations Management</span>
+            <span class="course-pct">93%</span>
+          </div>
+          <div class="course reveal">
+            <span class="course-grade">A</span>
+            <span>Financial Accounting</span>
+            <span class="course-pct">87%</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <h3>International Exchange</h3>
-            <p class="sub">Universitat Pompeu Fabra &mdash; Barcelona, Spain</p>
-          </div>
-          <span class="badge">Sep 2025 – Dec 2025</span>
-        </div>
-        <ul>
-          <li>Maintained strong academic performance while adapting to a new educational system and multicultural environment</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="alt-bg">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <h3>Owner / Founder</h3>
-            <p class="sub">LIVITED &mdash; Calgary, AB</p>
-          </div>
-          <span class="badge">Aug 2025 – Jan 2026</span>
-        </div>
-        <ul>
-          <li>Founded and operated an independent e-commerce consumer brand, managing all strategic, operational, and financial decisions independently from launch through revenue generation</li>
-          <li>Built financial models in Excel tracking revenue, margins, and ROI; analyzed unit economics and competitive positioning to make capital allocation decisions across product lines</li>
-          <li>Managed accounts payable and receivable, inventory, vendor negotiations, and financial recordkeeping across all business functions</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <h3>Sales Associate</h3>
-            <p class="sub">Canadian Tire &mdash; Calgary, AB</p>
-          </div>
-          <span class="badge">Jun 2024 – Aug 2025</span>
-        </div>
-        <ul>
-          <li>Analyzed sales data and purchasing trends to identify performance gaps, delivering data-driven recommendations to management that improved product placement and inventory turnover</li>
-          <li>Processed high volumes of transactions accurately in a fast-paced environment, consistently meeting daily targets with strong attention to detail</li>
-          <li>Trained 3 new team members on procedures and compliance protocols, demonstrating structured communication and the ability to work effectively within a team</li>
-        </ul>
+      <div class="edu-exchange reveal">
+        <p class="exchange-label">International Exchange</p>
+        <h3>Universitat<br>Pompeu Fabra</h3>
+        <p class="exchange-loc">Barcelona, Spain</p>
+        <p class="exchange-date">Sep &ndash; Dec 2025</p>
+        <p class="exchange-note">Maintained strong academic performance while adapting to a new educational system and multicultural environment</p>
       </div>
     </div>
   </section>
 
   <!-- LEADERSHIP -->
-  <section id="leadership">
-    <div class="container">
-      <h2 class="section-title">Leadership, Activities &amp; Competitions</h2>
-
-      <div class="card">
-        <div class="card-header">
-          <div>
-            <h3>Founder &mdash; UBC Capital Markets Club</h3>
-            <p class="sub">University of British Columbia &mdash; Kelowna, BC</p>
-          </div>
-          <span class="badge active">2026 – In Progress</span>
-        </div>
-        <ul>
-          <li>Currently co-founding a student-run investment club in collaboration with the Faculty of Management, developing a formal investment mandate, governance framework, and financial reporting structure for a student-managed fund</li>
-        </ul>
-      </div>
-
-      <div class="competitions">
-        <div class="comp-card">
-          <span class="place place-2">2nd</span>
-          <div>
-            <h4>Battle on Bay National Case Competition</h4>
-            <p class="sub">Toronto, Canada &nbsp;|&nbsp; Jan 2026</p>
-            <p>Built a DCF model and comparable company analysis; completed a live M&amp;A crisis case under a two-hour constraint, placing 2nd among 15 Canadian universities</p>
-          </div>
-        </div>
-        <div class="comp-card">
-          <span class="place place-1">1st</span>
-          <div>
-            <h4>MSA Annual Case Competition</h4>
-            <p class="sub">UBC &nbsp;|&nbsp; Feb 2026</p>
-            <p>Directed team financial analysis and investment recommendations, presenting structured findings to a panel of industry judges; earned 1st place overall</p>
-          </div>
-        </div>
-      </div>
+  <section id="leadership" class="reveal">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Leadership &amp; Competitions</h2>
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="alt-bg">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4>Technical</h4>
-          <div class="tags">
-            <span>Excel</span>
-            <span>Financial Modelling</span>
-            <span>DCF Analysis</span>
-            <span>Comparable Company Analysis</span>
-            <span>Python</span>
-            <span>Bloomberg Market Concepts</span>
-            <span>FMI Foundations</span>
-            <span>PowerPoint</span>
-            <span>Microsoft Office Suite</span>
+    <div class="leadership-grid">
+
+      <div class="club-card reveal">
+        <span class="club-tag">In Progress</span>
+        <h3>UBC Capital Markets Club</h3>
+        <p class="club-role">Founder &amp; Co-Chair</p>
+        <p>Co-founding a student-run investment club in collaboration with the Faculty of Management — developing a formal investment mandate, governance framework, and financial reporting structure for a student-managed fund.</p>
+        <p class="club-place">University of British Columbia &nbsp;&middot;&nbsp; 2026&ndash;Present</p>
+      </div>
+
+      <div class="comps reveal">
+        <div class="comp">
+          <div class="comp-place">1<sup>st</sup></div>
+          <div class="comp-info">
+            <h4>MSA Annual Case Competition</h4>
+            <p>UBC &nbsp;&middot;&nbsp; Feb 2026</p>
+            <p>Directed team financial analysis and investment recommendations; earned 1st place overall out of all competing teams</p>
           </div>
         </div>
-        <div class="skill-group">
-          <h4>Business</h4>
-          <div class="tags">
-            <span>Financial Analysis</span>
-            <span>Investment Research</span>
-            <span>Market Analysis</span>
-            <span>Capital Allocation</span>
-            <span>Strategic Frameworks</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <div class="tags">
-            <span>English — Fluent</span>
-            <span>Spanish — Fluent</span>
+        <div class="comp">
+          <div class="comp-place second">2<sup>nd</sup></div>
+          <div class="comp-info">
+            <h4>Battle on Bay &mdash; National Case Competition</h4>
+            <p>Toronto &nbsp;&middot;&nbsp; Jan 2026</p>
+            <p>Built a DCF model and comparable company analysis; live M&amp;A crisis case under a two-hour constraint — 2nd among 15 Canadian universities</p>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <div class="container contact-inner">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-sub">Open to opportunities in finance, investment, and strategy.</p>
+  <section id="contact" class="contact-section reveal">
+    <div class="contact-inner">
+      <p class="contact-pre">Open to opportunities in finance &amp; strategy</p>
+      <h2 class="contact-heading">Let's talk.</h2>
       <div class="contact-links">
-        <a href="mailto:estebangardiner@gmail.com" class="btn">estebangardiner@gmail.com</a>
-        <a href="tel:8254370917" class="btn btn-outline">(825) 437-0917</a>
-        <a href="https://linkedin.com/in/estebangardiner" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:estebangardiner@gmail.com">estebangardiner@gmail.com &rarr;</a>
+        <a href="tel:8254370917">(825) 437-0917</a>
+        <a href="https://linkedin.com/in/estebangardiner" target="_blank" rel="noopener">LinkedIn &nearr;</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Esteban Gardiner</p>
+    <span>Esteban Gardiner &copy; 2026</span>
+    <span>Calgary, AB &nbsp;&middot;&nbsp; Kelowna, BC</span>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
