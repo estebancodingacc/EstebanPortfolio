@@ -5,138 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Esteban Gardiner</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="#top" class="nav-logo">EG</a>
+      <span class="nav-logo">EG</span>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
       </ul>
-      <a href="mailto:estebangardiner@gmail.com" class="nav-cta">Contact</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="top">
+  <section class="hero" id="about">
     <div class="hero-inner">
-      <img
-        src="Esteban2025foto.jpg"
-        alt="Esteban Gardiner"
-        class="hero-photo"
-        onerror="this.style.display='none';document.querySelector('.hero-mono').style.display='flex'"
-      />
-      <div class="hero-mono">EG</div>
-
+      <div class="hero-photo-wrap">
+        <img src="Esteban2025foto.jpg" alt="Esteban Gardiner" class="hero-photo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="hero-photo hero-monogram" style="display:none">EG</div>
+      </div>
       <div class="hero-text">
+        <p class="hero-eyebrow">Hi, I'm</p>
         <h1>Esteban Gardiner</h1>
-        <p class="hero-sub">Business Management &amp; Computer Science &nbsp;·&nbsp; UBC &nbsp;·&nbsp; Calgary, AB</p>
+        <p class="hero-tagline">Business &amp; Finance · Computer Science · Calgary, AB</p>
         <p class="hero-bio">
-          Third-year student at UBC with a 4.33 GPA, focused on financial analysis, investment research,
-          and building things. Bloomberg Market Concepts and FMI Foundations certified. Bilingual in English and Spanish.
+          Third-year Business Management student at UBC with a minor in Computer Science and a 4.33 GPA.
+          Experienced in financial analysis, investment research, and strategic problem-solving through
+          national case competitions and independent business operations. Bloomberg Market Concepts and
+          FMI Foundations certified. Bilingual in English and Spanish.
         </p>
-        <div class="hero-actions">
-          <a href="mailto:estebangardiner@gmail.com" class="btn-primary">Get in touch</a>
-          <a href="https://linkedin.com/in/estebangardiner" class="btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="hero-aside">
-        <div class="kpi">
-          <span class="kpi-val">4.33</span>
-          <span class="kpi-key">GPA</span>
-        </div>
-        <div class="kpi">
-          <span class="kpi-val">2×</span>
-          <span class="kpi-key">Case comp wins</span>
-        </div>
-        <div class="kpi">
-          <span class="kpi-val">EN / ES</span>
-          <span class="kpi-key">Bilingual</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT / SKILLS -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-col">
-          <h2>About</h2>
-          <p>
-            I'm building at the intersection of finance and technology. Currently co-founding the UBC Capital Markets Club
-            and pursuing a BBA with a minor in Computer Science — because I think the best analysts also know how to build.
-          </p>
-          <p>
-            Previously founded LIVITED, an independent e-commerce brand, where I wore every hat from financial modelling
-            to vendor negotiations. I've competed nationally in case competitions and spent a semester studying in Barcelona.
-          </p>
-        </div>
-        <div class="skills-col">
-          <h2>Skills</h2>
-          <div class="skills-list">
-            <div class="skill-row">
-              <span class="skill-cat">Technical</span>
-              <span>Excel · DCF · Comp Analysis · Python · Bloomberg · FMI Foundations</span>
-            </div>
-            <div class="skill-row">
-              <span class="skill-cat">Business</span>
-              <span>Financial Modelling · Investment Research · Capital Allocation · Strategy</span>
-            </div>
-            <div class="skill-row">
-              <span class="skill-cat">Languages</span>
-              <span>English (Fluent) · Spanish (Fluent)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section-alt">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-
-      <div class="exp-list">
-        <div class="exp-item">
-          <div class="exp-left">
-            <span class="exp-date">Aug 2025 – Jan 2026</span>
-          </div>
-          <div class="exp-right">
-            <div class="exp-header">
-              <h3>Owner &amp; Founder</h3>
-              <span class="exp-company">LIVITED</span>
-            </div>
-            <ul>
-              <li>Founded and operated an independent e-commerce consumer brand, managing all strategic, operational, and financial decisions from launch through revenue generation</li>
-              <li>Built financial models in Excel tracking revenue, margins, and ROI; analyzed unit economics and competitive positioning to make capital allocation decisions across product lines</li>
-              <li>Managed accounts payable and receivable, inventory, vendor negotiations, and financial recordkeeping</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-left">
-            <span class="exp-date">Jun 2024 – Aug 2025</span>
-          </div>
-          <div class="exp-right">
-            <div class="exp-header">
-              <h3>Sales Associate</h3>
-              <span class="exp-company">Canadian Tire</span>
-            </div>
-            <ul>
-              <li>Analyzed sales data and purchasing trends to identify performance gaps, delivering data-driven recommendations that improved product placement and inventory turnover</li>
-              <li>Processed high volumes of transactions accurately in a fast-paced environment, consistently meeting daily targets with strong attention to detail</li>
-              <li>Trained 3 new team members on procedures and compliance protocols</li>
-            </ul>
-          </div>
+        <div class="hero-links">
+          <a href="mailto:estebangardiner@gmail.com" class="btn">Email Me</a>
+          <a href="https://linkedin.com/in/estebangardiner" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -147,86 +54,147 @@
     <div class="container">
       <h2 class="section-title">Education</h2>
 
-      <div class="edu-list">
-        <div class="edu-item">
-          <div class="edu-left">
-            <span class="edu-date">Expected May 2028</span>
-            <span class="edu-loc">Kelowna, BC</span>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Bachelor of Business Management</h3>
+            <p class="sub">University of British Columbia, Minor in Computer Science &nbsp;|&nbsp; Kelowna, BC</p>
           </div>
-          <div class="edu-right">
-            <div class="edu-header">
-              <h3>Bachelor of Business Management</h3>
-              <span class="gpa">4.33 GPA</span>
-            </div>
-            <p class="edu-inst">University of British Columbia &nbsp;·&nbsp; Minor in Computer Science</p>
-            <p class="edu-awards">Dean's List &nbsp;·&nbsp; Deputy Vice-Chancellor Scholarship &nbsp;·&nbsp; Walter H Gage &amp; Elsie M Harvey Education Abroad Scholarship</p>
-            <div class="course-grid">
-              <div class="course-item"><span>Investments</span><span class="c-grade">97% A+</span></div>
-              <div class="course-item"><span>Business Statistics</span><span class="c-grade">95% A+</span></div>
-              <div class="course-item"><span>Operations Management</span><span class="c-grade">93% A+</span></div>
-              <div class="course-item"><span>Managerial Accounting</span><span class="c-grade">92% A+</span></div>
-              <div class="course-item"><span>Financial Accounting</span><span class="c-grade">87% A</span></div>
-              <div class="course-item"><span>Data Structures</span><span class="c-grade">100% A+</span></div>
-            </div>
+          <span class="badge">Expected May 2028</span>
+        </div>
+        <ul>
+          <li><strong>GPA:</strong> 4.33 &nbsp;|&nbsp; Dean's List</li>
+          <li>Deputy Vice-Chancellor Scholarship for Continuing Students; Walter H Gage and Elsie M Harvey Education Abroad Scholarship</li>
+          <li><strong>Relevant courses:</strong> Investments (97%, A+), Financial Accounting (87%, A), Managerial Accounting (92%, A+), Business Statistics (95%, A+), Data Structures (100%, A+), Operations Management (93%, A+)</li>
+          <li>Proficient in Excel, Python, and Microsoft Office Suite; experienced with financial modelling, data analysis, and building structured analytical deliverables</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>International Exchange</h3>
+            <p class="sub">Universitat Pompeu Fabra, Barcelona, Spain</p>
+          </div>
+          <span class="badge">Sep 2025 – Dec 2025</span>
+        </div>
+        <ul>
+          <li>Maintained strong academic performance while adapting to a new educational system and multicultural environment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="alt-bg">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Owner / Founder</h3>
+            <p class="sub">LIVITED, Calgary, AB</p>
+          </div>
+          <span class="badge">Aug 2025 – Jan 2026</span>
+        </div>
+        <ul>
+          <li>Founded and operated an independent e-commerce consumer brand, managing all strategic, operational, and financial decisions independently from launch through revenue generation</li>
+          <li>Built financial models in Excel tracking revenue, margins, and ROI; analyzed unit economics and competitive positioning to make capital allocation decisions across product lines</li>
+          <li>Managed accounts payable and receivable, inventory, vendor negotiations, and financial recordkeeping across all business functions</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Sales Associate</h3>
+            <p class="sub">Canadian Tire, Calgary, AB</p>
+          </div>
+          <span class="badge">Jun 2024 – Aug 2025</span>
+        </div>
+        <ul>
+          <li>Analyzed sales data and purchasing trends to identify performance gaps, delivering data-driven recommendations to management that improved product placement and inventory turnover</li>
+          <li>Processed high volumes of transactions accurately in a fast-paced environment, consistently meeting daily targets with strong attention to detail</li>
+          <li>Trained 3 new team members on procedures and compliance protocols, demonstrating structured communication and the ability to work effectively within a team</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <div class="container">
+      <h2 class="section-title">Leadership, Activities &amp; Competitions</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Founder, UBC Capital Markets Club</h3>
+            <p class="sub">University of British Columbia, Kelowna, BC</p>
+          </div>
+          <span class="badge active">2026 – In Progress</span>
+        </div>
+        <ul>
+          <li>Currently co-founding a student-run investment club in collaboration with the Faculty of Management, developing a formal investment mandate, governance framework, and financial reporting structure for a student-managed fund</li>
+        </ul>
+      </div>
+
+      <div class="competitions">
+        <div class="comp-card">
+          <span class="place place-2">2nd</span>
+          <div>
+            <h4>Battle on Bay National Case Competition</h4>
+            <p class="sub">Toronto, Canada &nbsp;|&nbsp; Jan 2026</p>
+            <p>Built a DCF model and comparable company analysis; completed a live M&amp;A crisis case under a two-hour constraint, placing 2nd among 15 Canadian universities</p>
           </div>
         </div>
-
-        <div class="edu-item">
-          <div class="edu-left">
-            <span class="edu-date">Sep – Dec 2025</span>
-            <span class="edu-loc">Barcelona, Spain</span>
-          </div>
-          <div class="edu-right">
-            <h3>International Exchange</h3>
-            <p class="edu-inst">Universitat Pompeu Fabra</p>
-            <p class="edu-note">Maintained strong academic performance while adapting to a new educational system and multicultural environment</p>
+        <div class="comp-card">
+          <span class="place place-1">1st</span>
+          <div>
+            <h4>MSA Annual Case Competition</h4>
+            <p class="sub">UBC &nbsp;|&nbsp; Feb 2026</p>
+            <p>Directed team financial analysis and investment recommendations, presenting structured findings to a panel of industry judges; earned 1st place overall</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LEADERSHIP -->
-  <section id="leadership" class="section-alt">
+  <!-- SKILLS -->
+  <section id="skills" class="alt-bg">
     <div class="container">
-      <h2 class="section-title">Leadership &amp; Competitions</h2>
-
-      <div class="exp-list">
-        <div class="exp-item">
-          <div class="exp-left">
-            <span class="exp-date">2026 – Present</span>
-          </div>
-          <div class="exp-right">
-            <div class="exp-header">
-              <h3>Founder</h3>
-              <span class="exp-company">UBC Capital Markets Club</span>
-            </div>
-            <ul>
-              <li>Co-founding a student-run investment club with the Faculty of Management — developing a formal investment mandate, governance framework, and financial reporting structure for a student-managed fund</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="comp-list">
-        <div class="comp-item">
-          <span class="comp-place">1st</span>
-          <div class="comp-body">
-            <div class="comp-head">
-              <h4>MSA Annual Case Competition</h4>
-              <span>Feb 2026 &nbsp;·&nbsp; UBC</span>
-            </div>
-            <p>Directed team financial analysis and investment recommendations, presenting structured findings to a panel of industry judges</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Technical</h4>
+          <div class="tags">
+            <span>Excel</span>
+            <span>Financial Modelling</span>
+            <span>DCF Analysis</span>
+            <span>Comparable Company Analysis</span>
+            <span>Python</span>
+            <span>Bloomberg Market Concepts</span>
+            <span>FMI Foundations</span>
+            <span>PowerPoint</span>
+            <span>Microsoft Office Suite</span>
           </div>
         </div>
-        <div class="comp-item">
-          <span class="comp-place">2nd</span>
-          <div class="comp-body">
-            <div class="comp-head">
-              <h4>Battle on Bay — National Case Competition</h4>
-              <span>Jan 2026 &nbsp;·&nbsp; Toronto</span>
-            </div>
-            <p>Built a DCF model and comparable company analysis; live M&amp;A crisis case under a two-hour constraint — 2nd among 15 Canadian universities</p>
+        <div class="skill-group">
+          <h4>Business</h4>
+          <div class="tags">
+            <span>Financial Analysis</span>
+            <span>Investment Research</span>
+            <span>Market Analysis</span>
+            <span>Capital Allocation</span>
+            <span>Strategic Frameworks</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="tags">
+            <span>English — Fluent</span>
+            <span>Spanish — Fluent</span>
           </div>
         </div>
       </div>
@@ -235,26 +203,19 @@
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="container">
-      <div class="contact-block">
-        <div>
-          <h2>Get in touch</h2>
-          <p>Open to opportunities in finance, investment, and strategy.</p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:estebangardiner@gmail.com">estebangardiner@gmail.com</a>
-          <a href="tel:8254370917">(825) 437-0917</a>
-          <a href="https://linkedin.com/in/estebangardiner" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+    <div class="container contact-inner">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">Open to opportunities in finance, investment, and strategy.</p>
+      <div class="contact-links">
+        <a href="mailto:estebangardiner@gmail.com" class="btn">estebangardiner@gmail.com</a>
+        <a href="tel:8254370917" class="btn btn-outline">(825) 437-0917</a>
+        <a href="https://linkedin.com/in/estebangardiner" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="container footer-inner">
-      <span>Esteban Gardiner</span>
-      <span>© 2026</span>
-    </div>
+    <p>&copy; 2026 Esteban Gardiner</p>
   </footer>
 
 </body>
